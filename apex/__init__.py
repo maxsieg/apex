@@ -1,4 +1,9 @@
-from . import parallel
+import torch
+import warning
+
+if torch.distributed.is_available():
+    from . import parallel
+
 from . import amp
 from . import fp16_utils
 
