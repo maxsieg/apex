@@ -1,5 +1,4 @@
 import torch
-import warning
 
 if torch.distributed.is_available():
     from . import parallel
